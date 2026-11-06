@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>小声音档案馆 · 素材包 / The Small Sound Archive · Media Kit</title>
+<meta name="description" content="《小声音档案馆》宣传片、完整流程录屏与设计说明。">
+<meta name="theme-color" content="#14100d">
+<style>
+:root{
+  --bg:#14100d;
+  --panel:#211a15;
+  --panel2:#1a1511;
+  --line:#3b2f24;
+  --paper:#efe4cd;
+  --warm:#e0a75e;
+  --dim:#9b8b76;
+  --serif:Georgia,"Times New Roman","Songti SC","SimSun",serif;
+  --sans:ui-sans-serif,-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--paper);
+  font:16px/1.75 var(--sans);
+  padding:0 20px 80px;
+  background-image:
+    radial-gradient(1200px 600px at 50% -10%, rgba(224,167,94,.07), transparent 70%);
+  background-repeat:no-repeat;
+}
+.wrap{max-width:920px;margin:0 auto}
+
+/* ---------- 页头 ---------- */
+header{padding:64px 0 44px;text-align:center;border-bottom:1px solid var(--line)}
+.kicker{
+  font:12px/1 var(--sans);letter-spacing:.28em;text-transform:uppercase;
+  color:var(--warm);opacity:.85;margin:0 0 22px;
+}
+h1{
+  font:400 40px/1.25 var(--serif);margin:0 0 12px;letter-spacing:.02em;
+  color:var(--paper);
+}
+.en-title{
+  font:italic 400 15px/1.4 var(--serif);color:var(--dim);margin:0 0 26px;letter-spacing:.06em;
+}
+.tagline{
+  font:400 17px/1.85 var(--serif);color:#cdbfa8;margin:0 auto;max-width:34em;
+}
+.tagline em{font-style:normal;color:var(--warm)}
+
+/* ---------- 通用节 ---------- */
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+.num{
+  font:12px/1 var(--sans);letter-spacing:.22em;color:var(--warm);
+  opacity:.7;margin:0 0 10px;
+}
+h2{
+  font:400 25px/1.35 var(--serif);margin:0 0 8px;
+}
+.sub{
+  color:var(--dim);font-size:14px;margin:0 0 26px;
+}
+
+/* ---------- 视频 ---------- */
+.video-box{
+  background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:12px;overflow:hidden;
+}
+.video-box video{
+  display:block;width:100%;height:auto;border-radius:6px;background:#000;
+}
+/* 竖版录屏 + 时间码左右并排；桌面左侧不再空一大块 */
+.split{
+  display:grid;grid-template-columns:392px 1fr;gap:34px;align-items:start;
+}
+.split-v .video-box{padding:10px}
+.split-v video{width:100%;height:auto;display:block}
+.split-t table{margin:0}
+.split-t table tr:first-child th,
+.split-t table tr:first-child td{padding-top:0}
+.portrait-wrap{
+  max-width:392px;margin:0 auto;
+}
+.portrait-wrap .video-box{padding:10px}
+.portrait-wrap video{max-height:74vh;width:100%;object-fit:contain}
+.cap{
+  display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;
+  margin:16px 0 0;font-size:12.5px;color:var(--dim);line-height:1.9;
+}
+.cap b{color:#c3b39b;font-weight:500}
+.dl{
+  display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px;
+}
+.dl a{
+  font-size:12.5px;color:var(--dim);text-decoration:none;border:1px solid var(--line);
+  border-radius:999px;padding:6px 15px;transition:.2s;
+}
+.dl a:hover{color:var(--warm);border-color:#5a4632}
+
+/* ---------- 设计文档 ---------- */
+.lede{
+  font:400 16.5px/1.95 var(--serif);color:#d8cab2;margin:0 0 34px;
+}
+.lede p{margin:0 0 14px}
+.lede p:last-child{margin-bottom:0}
+
+.beats{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 34px;
+}
+.beat{
+  background:var(--panel2);border:1px solid var(--line);border-radius:8px;
+  padding:16px 15px 18px;
+}
+.beat .c{
+  font:400 20px/1 var(--serif);color:var(--warm);display:block;margin-bottom:10px;
+}
+.beat .n{
+  font:11px/1 var(--sans);letter-spacing:.2em;color:var(--dim);display:block;margin-bottom:6px;
+}
+.beat p{margin:0;font-size:13px;line-height:1.85;color:#b8a992}
+
+h3{
+  font:400 15px/1.5 var(--sans);letter-spacing:.06em;color:var(--warm);
+  margin:0 0 14px;opacity:.9;
+}
+.axes{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0 0 10px;
+}
+.axis{
+  border:1px solid var(--line);border-radius:6px;padding:11px 8px;text-align:center;
+}
+.axis .k{font:400 15px/1.4 var(--serif);color:var(--paper);display:block}
+.axis .v{font-size:11px;color:var(--dim);margin-top:4px;display:block;line-height:1.6}
+.note{font-size:13px;color:var(--dim);line-height:1.9;margin:0 0 34px}
+
+/* ---------- 规格表 ---------- */
+table{
+  width:100%;border-collapse:collapse;font-size:13.5px;
+  border-top:1px solid var(--line);
+}
+th,td{
+  text-align:left;padding:12px 12px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top;
+}
+th{color:var(--dim);font-weight:400;width:34%;white-space:nowrap}
+td{color:#d8cab2}
+
+/* ---------- 页脚 ---------- */
+footer{
+  padding:52px 0 0;text-align:center;color:var(--dim);font-size:12.5px;line-height:2;
+}
+footer .sign{
+  font:italic 400 15px/1.6 var(--serif);color:#b8a992;margin:0 0 16px;
+}
+
+/* ---------- 手机 ---------- */
+@media (max-width:860px){
+  .split{grid-template-columns:1fr;gap:22px}
+  .split-v{max-width:392px;margin:0 auto;width:100%}
+  .split-t .note{margin-top:18px!important}
+}
+@media (max-width:720px){
+  body{padding:0 16px 60px}
+  header{padding:44px 0 34px}
+  h1{font-size:29px}
+  .tagline{font-size:15px}
+  .tagline br{display:none}
+  section{padding:40px 0}
+  h2{font-size:21px}
+  .beats{grid-template-columns:repeat(2,1fr);gap:10px}
+  .axes{grid-template-columns:repeat(2,1fr)}
+  th{width:34%;font-size:12.5px;padding-right:12px}
+  td{font-size:13px}
+  .portrait-wrap{max-width:100%}
+  .portrait-wrap video{max-height:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="kicker">Media Kit · 素材包</p>
+  <h1>小声音档案馆</h1>
+  <p class="en-title">The Small Sound Archive</p>
+  <p class="tagline">你守着一间装满声音的档案馆。来访者说不清一段记不起来的往事，<br>你的工作是把那段声音<em>调回来</em>，还给他。</p>
+</header>
+
+<section>
+  <p class="num">01 — 预告片</p>
+  <h2>15 秒宣传短片</h2>
+  <p class="sub">从标题页进入，到第一章三层配平收尾。横屏 16:9。</p>
+  <div class="video-box">
+    <video controls playsinline preload="metadata" poster="poster-promo.jpg">
+      <source src="video/promo-15s-1920x1080.mp4" type="video/mp4">
+      你的浏览器不支持内嵌播放，可直接下载观看。
+    </video>
+  </div>
+  <p class="cap"><span><b>1920×1080</b> 16:9</span><span><b>15.6 秒</b></span><span><b>H.264</b> · 1.9 MB</span><span>无配音 · 无字幕</span></p>
+  <div class="dl">
+    <a href="video/promo-15s-1920x1080.mp4" download>下载 1080p 版</a>
+    <a href="video/promo-15s-1280x720.mp4" download>下载 720p 版</a>
+  </div>
+</section>
+
+<section>
+  <p class="num">02 — 完整流程录屏</p>
+  <h2>从启动到结算 · 一整局</h2>
+  <p class="sub">冷启动开始，九章一章不跳，直到出现结算画面。带游戏原声。</p>
+  <div class="split">
+    <div class="split-v">
+      <div class="video-box">
+        <video controls playsinline preload="metadata" poster="poster-full.jpg">
+          <source src="video/gameplay-full-1080x1920.mp4" type="video/mp4">
+          你的浏览器不支持内嵌播放，可直接下载观看。
+        </video>
+      </div>
+      <p class="cap"><span><b>1080×1920</b> 9:16</span><span><b>6 分 14 秒</b></span><span><b>H.264 + AAC</b></span><span>31.3 MB · 含原声</span></p>
+    </div>
+
+    <div class="split-t">
+      <table>
+        <tr><th>0:00</th><td>冷启动 · 首次进入的隐私说明</td></tr>
+        <tr><th>0:07</th><td>标题页</td></tr>
+        <tr><th>0:12</th><td>序章「交班」——新手引导一步步教到会</td></tr>
+        <tr><th>0:42 – 5:23</th><td>一至八章依次打完</td></tr>
+        <tr><th>6:00</th><td>结算画面：S 评价 · 完美 9/9 · 信任 18</td></tr>
+      </table>
+
+      <p class="note" style="margin-top:22px;margin-bottom:0">片中会有几段是安静的，这不是漏录。游戏的音色只在「把声音放上桌」之后才逐层叠上去，故事与提问阶段本来就不出声。要确认音轨在，看 0:42 之后每一次拖动推子的地方。</p>
+    </div>
+  </div>
+
+  <div class="dl">
+    <a href="video/gameplay-full-1080x1920.mp4" download>下载完整录屏</a>
+  </div>
+</section>
+
+<section>
+  <p class="num">03 — 设计说明</p>
+  <h2>一款关于「听」的解谜游戏</h2>
+  <p class="sub">序章 + 八章（共九章）· 约 45–60 分钟 · 简体中文 / English</p>
+
+  <div class="lede">
+    <p>数字时代里，我们给照片、给文字都建过档案，唯独声音没有。一段录音会随着设备报废、账号注销而彻底消失——它不像照片那样能一眼看见，也不像文字那样能被搜索。声音是最容易被弄丢的记忆载体。</p>
+    <p>这个游戏把「找回一段声音」做成可以亲手操作的劳动：不是从列表里挑一个正确答案，而是判断它的远近、冷暖、动静、粗细，然后把音量推到对的区间。玩家最后听到的那段声音，是自己在四个维度上一点点判断出来的结果。</p>
+  </div>
+
+  <h3>每一章的四个节拍</h3>
+  <div class="beats">
+    <div class="beat"><span class="c">听</span><p>来访者的往事分三段浮现，一段一段来。他给不出形容词，只有零碎画面。</p></div>
+    <div class="beat"><span class="c">问</span><p>三个问题只能问两个。问对话能直接划掉错卡；问错话就只能靠耳朵从两张孪生卡里分辨。</p></div>
+    <div class="beat"><span class="c">调</span><p>把声音放上桌，逐层配平。他说「很轻、在很远的地方」，就往左拖，别推满。</p></div>
+    <div class="beat"><span class="c">交</span><p>声音对了，来访还没结束。走之前他会听你说一句话，有一句会被他记住。</p></div>
+  </div>
+
+  <h3>核心判断依据 · 每张卡的四个刻度</h3>
+  <div class="axes">
+    <div class="axis"><span class="k">远近</span><span class="v">贴耳 / 隔着一段</span></div>
+    <div class="axis"><span class="k">冷暖</span><span class="v">金属 / 木质</span></div>
+    <div class="axis"><span class="k">动静</span><span class="v">持续 / 突发</span></div>
+    <div class="axis"><span class="k">粗细</span><span class="v">干净 / 带杂</span></div>
+  </div>
+  <p class="note">点越多，越远、越暖、越吵、越糙。每个架子上还放着一张几乎一样的卡——玻璃上的雨与铁皮上的雨，水壶刚响与水已经烧开。挑错通常就差这一点。</p>
+
+  <h3>容错与成长</h3>
+  <p class="note">配平错了不扣机会，来访者会直接说「太响了」或「太轻了」，接着调就是。三次机会用完才算本章失败，可以重来。章与章之间三选一学新技能，学会后点阵旁会显示 0–100 的精确数值——这是分辨孪生卡最可靠的办法。技能实际改变你看到和听到的信息量，不是数值加成。</p>
+
+  <h3>制作信息</h3>
+  <table>
+    <tr><th>形态</th><td>单机移动游戏，安卓 APK 与免安装网页版</td></tr>
+    <tr><th>容量</th><td>约 5.9 MB，最低支持 Android 5.1</td></tr>
+    <tr><th>音频</th><td>56 种音色，全部由 Web Audio 实时合成，<b>不含任何音频素材文件</b></td></tr>
+    <tr><th>联网</th><td>全程离线，零内购、零广告、无账号体系、不收集任何信息</td></tr>
+    <tr><th>语言</th><td>简体中文 / English，随时切换</td></tr>
+    <tr><th>存档</th><td>自动存档，随时退出，下次可「继续」</td></tr>
+    <tr><th>开发</th><td>个人开发，鹏达游戏开发工作室</td></tr>
+  </table>
+</section>
+
+<footer>
+  <p class="sign">把一段声音调回来，还给他。</p>
+  <p>《小声音档案馆》The Small Sound Archive</p>
+  <p>所有音色由代码实时合成 · 无外部素材依赖</p>
+</footer>
+
+</div>
+</body>
+</html>
